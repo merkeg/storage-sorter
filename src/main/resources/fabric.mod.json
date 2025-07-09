@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "storage-sorter",
+	"version": "${version}",
+	"name": "storage-sorter",
+	"description": "Storage organizer",
+	"authors": [
+		"merkeg"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/storage-sorter/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"de.merkeg.StorageSorter"
+		],
+		"client": [
+			"de.merkeg.StoragesorterClient"
+		]
+	},
+	"mixins": [
+		"storage-sorter.mixins.json",
+		{
+			"config": "storage-sorter.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.7",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
