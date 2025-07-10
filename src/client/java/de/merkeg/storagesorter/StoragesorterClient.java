@@ -1,4 +1,4 @@
-package de.merkeg;
+package de.merkeg.storagesorter;
 
 import net.fabricmc.api.ClientModInitializer;
 

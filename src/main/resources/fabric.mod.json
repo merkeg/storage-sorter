@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"de.merkeg.StorageSorter"
+			"de.merkeg.storagesorter.StorageSorter"
 		],
 		"client": [
-			"de.merkeg.StoragesorterClient"
+			"de.merkeg.storagesorter.StoragesorterClient"
 		]
 	},
 	"mixins": [

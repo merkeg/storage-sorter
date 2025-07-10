@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "de.merkeg.mixin.client",
+	"package": "de.merkeg.storagesorter.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
 		"ExampleClientMixin"
