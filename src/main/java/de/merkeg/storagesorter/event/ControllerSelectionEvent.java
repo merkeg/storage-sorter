@@ -36,11 +36,10 @@ public class ControllerSelectionEvent implements AttackBlockCallback {
       return ActionResult.PASS;
     }
 
-    if(!(playerEntity instanceof ServerPlayerEntity)) {
+    if(!(playerEntity instanceof ServerPlayerEntity serverPlayerEntity)) {
       return ActionResult.PASS;
     }
 
-    ServerPlayerEntity serverPlayerEntity = (ServerPlayerEntity) playerEntity;
     Block clickedBlock = world.getBlockState(blockPos).getBlock();
     Block blockBelow = world.getBlockState(blockPos.down()).getBlock();
 
